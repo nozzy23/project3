@@ -4,10 +4,10 @@ body {
     background-color: #ccc;
   }
   
-body {
-  opacity: 0.1;
+#countDown {
+  color: yellow;
 }
-  
+
   #wrapper {
     border: 1px solid#00bcd4;
     height: 350px;
