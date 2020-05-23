@@ -1,17 +1,12 @@
-
-html,
-  body {
-    font-family: sans-serif;
-    
-    background-image: url('cars.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
+body {
+    background: url(cars.jpg) no-repeat center fixed;
     background-size: cover;
-   
+    background-color: #ccc;
   }
-  img {
-    opacity: 0.5;
-  }
+  
+body {
+  opacity: 0.1;
+}
   
   #wrapper {
     border: 1px solid#00bcd4;
