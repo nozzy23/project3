@@ -1,18 +1,13 @@
-
-html,
-  body {
-    font-family: sans-serif;
-    
-    background-image: url('cars.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
+body {
+    background: url(cars.jpg) no-repeat center fixed;
     background-size: cover;
-   
-  }
-  img {
-    opacity: 0.5;
+    background-color: #ccc;
   }
   
+#countDown {
+  color: yellow;
+}
+
   #wrapper {
     border: 1px solid#00bcd4;
     height: 350px;
