@@ -1,8 +1,9 @@
 body {
-    background: url(cars.jpg) no-repeat center fixed;
+    background-image: url(cars.png) no-repeat center fixed;
     background-size: cover;
     background-color: #ccc;
   }
+
   
 #countDown {
   color: yellow;
@@ -17,6 +18,8 @@ body {
     transform: translateY(-50%);
     width: 680px;
   }
+
+  
   #wrapper input[type="radio"] {
     display: none;
   }
