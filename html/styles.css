@@ -1,18 +1,14 @@
-
-html,
-  body {
-    font-family: sans-serif;
-    
-    background-image: url('cars.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
+body {
+    background-image: url(cars.png) no-repeat center fixed;
     background-size: cover;
-   
+    background-color: #ccc;
   }
-  img {
-    opacity: 0.5;
-  }
+
   
+#countDown {
+  color: yellow;
+}
+
   #wrapper {
     border: 1px solid#00bcd4;
     height: 350px;
@@ -22,6 +18,8 @@ html,
     transform: translateY(-50%);
     width: 680px;
   }
+
+  
   #wrapper input[type="radio"] {
     display: none;
   }
