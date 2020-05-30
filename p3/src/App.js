@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
-import Landingpage from "./pages/Landingpage.js";
-import Dashboardpage from "./pages/Dashboardpage.js";
-import Registerpage from "./pages/Registerpage.js";
+import Landingpage from "./pages/Landingpage/Landingpage.js";
+import Dashboardpage from "./pages/Dashboard/Dashboardpage.js";
+import Registerpage from "./pages/Registerpage/Registerpage.js";
 
 function App() {
   return (
