@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MemoryApp from './MemoryApp';
+import LandingPage from './LandingPage';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MemoryApp />
+    < LandingPage />
   </React.StrictMode>,
   document.getElementById('root')
 );

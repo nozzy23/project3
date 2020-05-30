@@ -30,7 +30,7 @@ const reducer=(state,action)=>{
     
 
 
-const MemoryApp=()=>{
+const LandingPage=()=>{
     
     
     const savedState=localStorage.getItem("state");
@@ -60,4 +60,4 @@ const MemoryApp=()=>{
 
 
 
-export default MemoryApp;
+export default LandingPage;
