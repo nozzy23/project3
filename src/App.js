@@ -1,29 +1,21 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle'
-import './App.css';
-import Navbar from './components/NavbarHeader';
-import Banner from "./components/Banner";
-import Buttons from './components/Buttons';
-import Table from './components/Parked'
-
+import React from 'react';
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import Landingpage from "./pages/Landingpage/Landingpage.js";
+import Dashboardpage from "./pages/Dashboard/Dashboardpage.js";
+import Registerpage from "./pages/Registerpage/Registerpage.js";
 
 function App() {
-
-    return (
-     
-        <div className="container">
-        <Navbar/>
-       <br></br>
-        <Banner/>
-        <br></br>
-        <Buttons/>
-        <br></br>
-        <Table/>
-        </div>
-
-    );
-  }
-
+  return (
+    <div className="App">
+      <header className="App-header">
+      <Router>
+        <Route exact path="/" component={Landingpage}/>
+        <Route exact path="/dashboard" component={Dashboardpage}/>
+        <Route exact path="/register" component={Registerpage}/>
+        </Router>
+      </header>
+    </div>
+  );
+}
 
 export default App;
