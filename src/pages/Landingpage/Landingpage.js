@@ -1,8 +1,63 @@
-import React from "react";
+import React from 'react';
+import GlobalContext,{initialState} from '../../component/context';
+import Authorization from '../../component/Authorization';
+import Home from '../../component/home';
 
-function Landingpage(){
-    return <h2>This is where our customers will log in if the have a page if not they can create a user</h2>
+
+const persistApp=(state)=>{
+    localStorage.setItem("state",JSON.stringify(state))
+}
+
+const reducer=(state,action)=>{
+    if(action.type==="signup"){
+        const newState={
+            ...state,
+            usersList:[...state.usersList,action.payload],
+            currentAccount:action.payload.username
+        };
+       
+        persistApp(newState);
+        return newState;
+        }else if (action.type==="login"){
+            const newState={
+                ...state,
+                currentAccount:action.payload.username
+            };
+            return newState;
+        }
+        return state;
+    }
+    
+
+
+const LandingPage=()=>{
+    
+    
+    const savedState=localStorage.getItem("state");
+
+    const [globalState,dispatch]=React.useReducer(reducer,savedState?JSON.parse(savedState):initialState);
+    
+    const displaySection=()=>{
+        if (!globalState.currentAccount){
+        return <Authorization />
+    }
+    else{
+        return <Home />
+        }
+    }
+
+    return <GlobalContext.Provider value={{globalState,dispatch}}>
+         <div className="row" style={{paddingTop:"50px"}}>
+             <div className="col-6 offset-3">
+           {displaySection()}
+             </div>
+         </div>
+    </GlobalContext.Provider>
+    
+    
+
 }
 
 
-export default Landingpage;
+
+export default LandingPage;
