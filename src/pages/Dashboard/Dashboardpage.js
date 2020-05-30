@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/NavbarHeader';
-import Banner from "../components/Banner";
-import Buttons from '../components/Buttons';
-import Table from '../components/Parked'
+import Navbar from '../../component/Navbar/Navbar';
+import Banner from "../../component/Banner/Banner";
+import Buttons from '../../component/Buttons/Buttons';
+import Table from '../../component/Parked/Parked'
 
 function Main (){
     return (
