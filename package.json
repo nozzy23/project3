@@ -12,5 +12,10 @@
     "install": "cd src && npm install",
     "build": "cd src && npm run build"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.9.16"
+  }
 }
