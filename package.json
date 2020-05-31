@@ -1,0 +1,16 @@
+{
+  "name": "project_03",
+  "version": "1.0.0",
+  "description": "Project_03",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'src/*'\" \"npm run src\"",
+    "src": "cd src && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd src && npm install",
+    "build": "cd src && npm run build"
+  },
+  "dependencies": {}
+}
