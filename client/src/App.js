@@ -4,7 +4,7 @@ import Landingpage from "./pages/Landingpage/Landingpage.js";
 import Dashboardpage from "./pages/Dashboard/Dashboardpage.js";
 import Registerpage from "./pages/Registerpage/Registerpage.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
- import 'bootstrap/dist/js/bootstrap.bundle'
+ import 'bootstrap/dist/js/bootstrap.bundle';
  
 
 function App() {
