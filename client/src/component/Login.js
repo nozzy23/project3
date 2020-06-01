@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-import GlobalContext from '../component/context';
+import GlobalContext from './context';
 
 
 
