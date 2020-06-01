@@ -2,36 +2,53 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const dbprofilesSchema = new Schema({
-  string: {
+  username: {
     type: String,
     trim: true,
-    required: "String is Required"
+    required: "username is Required"
   },
 
-  number: {
+  password: {
+    type: String,
+    trim: true,
+    required: "password is required"
+  },
+  
+  phoneNumber: {
     type: Number,
     unique: true,
     required: true
   },
 
   email: {
-    type: String,
+    type: String, 
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
-  boolean: Boolean,
-
-  array: Array,
-
-  date: {
-    type: Date,
-    default: Date.now
+  unit: {
+    type: Number,
+    required: true
   },
 
-  longstring: {
+  vehicle: {
+    type: String,
+    required: false
+  },
+
+
+  /*boolean: Boolean,*/
+
+  /*array: Array,*/
+
+  /*date: {
+    type: Date,
+    default: Date.now
+  },*/
+
+  /*longstring: {
     type: String,
     validate: [({ length }) => length >= 6, "Longstring should be longer."]
-  }
+  }*/
 });
 
 const profiles = mongoose.model("Profiles", dbprofilesSchema);
