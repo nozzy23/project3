@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
-import GlobalContext from '../component/context';
+import GlobalContext from './context';
 
 class Signup extends Component{
 

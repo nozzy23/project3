@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+<<<<<<< HEAD:src/index.js
 
 import 'bootstrap/dist/css/bootstrap.min.css';
  import 'bootstrap/dist/js/bootstrap.bundle'
 
+=======
+import 'bootstrap/dist/css/bootstrap.css';
+>>>>>>> 1fa2cb61b54ef6d4f28c1782bd4b1775a04dcc28:client/src/index.js
 ReactDOM.render(
   <React.StrictMode>
     <App />
