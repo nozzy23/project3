@@ -3,7 +3,7 @@ import React from 'react';
 function Buttons (){
     return (
         <div className="col-lg-12">
-        <div classNameName="buttons">
+        <div className="buttons">
           
         <div className="btn-group" role="group">
     <button id="btnGroupDrop1" type="button" className="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
