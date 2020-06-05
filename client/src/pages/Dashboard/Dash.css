@@ -1,0 +1,21 @@
+#btnGroupDrop1 {
+    padding: 12px 240px;
+    font-size: 30px;
+}
+
+#sellStocks {
+    padding: 12px 140px;
+    font-size: 30px
+}
+
+#reserve{
+    font-size: 30px
+}
+
+#settingsID{
+   align-items: center;
+}
+
+.body {
+    background-color: black;
+}
